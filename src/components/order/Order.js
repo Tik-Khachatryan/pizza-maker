@@ -1,0 +1,1 @@
+import React from "react";import './order.css';import {MakePizza} from "../makePizza/MakePizza";export const Order = ({saveData, data, createNotification}) => {    return (        <div className={'order'}>            <MakePizza saveData={saveData} data={data} createNotification={createNotification}/>        </div>    )}

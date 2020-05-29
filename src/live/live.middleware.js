@@ -1,0 +1,1 @@
+import {createdPizza} from "../components/createdPizza";export const live = store => next => action => {    if(action.type !== "SAVE_DATA"){        return next(action)    }    const data = createdPizza;    return store.dispatch({type: "RECEIVE", payload: {data}})}

@@ -1,0 +1,1 @@
+.buyBtn{    background: rgba(0, 128, 0, 0.85);    border-radius: 15px;    width: 200px;    height: 45px;    border: none;    outline: none;    margin: 30px;    box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.7);}.buyBtn:active{    background: #014401;}.buyBtn:hover{    transform: scale(2);}

@@ -1,0 +1,1 @@
+import {createdPizza} from "../components/createdPizza";export const cache = store => next => action => {    if(action.type !== "SAVE_DATA"){        return next(action)    }    if(!createdPizza){        return next(action)    }    return store.dispatch({type: "RECEIVE", payload: {data: `${createdPizza} (from cache)`}})}

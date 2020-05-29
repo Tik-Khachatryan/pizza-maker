@@ -1,0 +1,1 @@
+import {createdPizza} from "../components/createdPizza";export const mainApp = (state = createdPizza, action) => {    switch (action.type) {        case "SAVE_DATA":        case "RECEIVE":            return{                ...state,                ...action.payload            }        default:            return state    }}
